@@ -14,7 +14,7 @@ const PostShare = () => {
             <div className='w-full'>
                 <SearchBar placeholder="What's happening?" />
                 <div className='flex justify-between items-center pt-4'>
-                    <div className='flex flex-row gap-2 text-lg'>
+                    <div className='flex flex-row gap-2 text-lg text-yellow-700'>
                         <UilScenery />
                         <p>Photo</p>
                     </div>
