@@ -3,8 +3,8 @@ import { Followers } from '../../data/FollowersData'
 
 const FollowersCard = () => {
     return (
-        <div className='w-full pt-4'>
-            <h3 className='font-bold text-lg py-4'>Who is following you</h3>
+        <div className='w-full'>
+            <h3 className='font-bold text-lg pb-2'>Who is following you</h3>
 
             {Followers.map((follower, id) => {
                 return (

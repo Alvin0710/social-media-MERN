@@ -5,7 +5,7 @@ import Profile from '../../img/profileImg.jpg'
 
 const ProfileCard = () => {
     return (
-        <div className="rounded-lg overflow-clip bg-white flex flex-col relative gap-4 my-4">
+        <div className="rounded-lg overflow-clip bg-white flex flex-col relative gap-4">
             <div className='relative flex flex-col items-center justify-center'>
                 <img src={Cover} alt="cover" className='w-full' />
                 <img src={Profile} alt="profile" className='w-[6rem] rounded-full absolute bottom-[-3rem] shadow-2xl' />

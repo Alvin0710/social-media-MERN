@@ -5,7 +5,7 @@ import ProfileSide from '../components/ProfileSide/ProfileSide'
 
 const Home = () => {
     return (
-        <div className='Home relative grid grid-cols-[1.5fr_3fr_1.5fr] gap-8'>
+        <div className='Home relative grid grid-cols-[1.5fr_3fr_1.5fr] gap-5'>
             <ProfileSide/>
             <PostSide/>
             <div className="profileSide">
