@@ -9,14 +9,15 @@ const FollowersCard = () => {
             {Followers.map((follower, id) => {
                 return (
                     <div className='flex items-center justify-between py-3'>
-                        <div className='flex items-center gap-4'>
-                            <img src={follower.img} alt="" className='object-cover rounded-full w-[4rem] h-[4rem]' />
+                        <span className='hidden'>{id}</span>
+                        <div className='flex items-center gap-3'>
+                            <img src={follower.img} alt="" className='object-cover rounded-full w-[3.7rem] h-[3.7rem]' />
                             <div className='flex flex-col'>
                                 <span className='font-bold'>{follower.name}</span>
-                                <span className='text-gray-500'>@{follower.username}</span>
+                                <span className='text-gray-500 break-all'>@{follower.username}</span>
                             </div>
                         </div>
-                        <button className='bg-orange-500 rounded-md py-2 px-5 mx-1 text-white text-md hover:text-orange-500 hover:outline hover:outline-offset-[-2px] hover:outline-2 hover:border-orange-500 hover:bg-transparent'>
+                        <button className='py-1.5 px-5 mx-1 text-md button'>
                             Follow
                         </button>
                     </div>

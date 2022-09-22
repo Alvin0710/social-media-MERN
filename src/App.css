@@ -20,14 +20,26 @@
   --shedule: #E1AE4A;
 } */
 
+:root {
+  --card-color: #ffffffbd;
+}
+
 html, body {
   font-family: 'Inter', sans-serif;
 }
 
-/* @layer components {
-  .App {
-    color: var(--photo)
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@layer components {
+  .button {
+    @apply bg-orange-500 text-white rounded-md hover:text-orange-500 hover:outline hover:outline-offset-[-2px] hover:outline-2 hover:border-orange-500 hover:bg-transparent
   }
 
-
-} */
+  .info {
+    @apply flex items-center gap-1
+  }
+}
