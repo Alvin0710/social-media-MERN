@@ -25,12 +25,32 @@
 }
 
 html, body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif !important;
+}
+
+::-webkit-file-upload-button {
+  cursor: pointer;
+  border: 2px solid orangered;
+  color: orangered;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+::-webkit-file-upload-button:hover {
+  background-color: orangered;
+  color: white;
 }
 
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.infoInput:focus {
+  outline: 2px solid orange;
+  background-color: var(--card-color);
 }
 
 
@@ -40,6 +60,10 @@ html, body {
   }
 
   .info {
-    @apply flex items-center gap-1
+    @apply flex items-center gap-2
+  }
+
+  .infoInput {
+    @apply p-4 rounded-md bg-gray-100 focus:border-orange-500 focus:outline-none
   }
 }

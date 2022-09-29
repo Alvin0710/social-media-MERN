@@ -15,7 +15,7 @@ const ProfileCard = () => {
             </div>
 
             <div className='flex flex-col items-center mt-[3rem] gap-1 py-4'>
-                <span className='font-bold'>Zendaya MJ</span>
+                <span className='font-bold text-xl'>Zendaya MJ</span>
                 <span>Senior UI/UX Designer</span>
             </div>
 
@@ -38,14 +38,16 @@ const ProfileCard = () => {
                         </div>
                     )}
                 </div>
-                <hr className='border-gray-100 w-[70%] mx-auto' />
 
                 {ProfilePage ? '' :
-                    <div className='flex justify-center items-center my-8 cursor-pointer'>
-                        <span className='font-bold text-orange-500 hover:text-orange-400'>
-                            My Profile
-                        </span>
-                    </div>
+                    <>
+                        <hr className='border-gray-100 w-[70%] mx-auto' />
+                        <div className='flex justify-center items-center my-8 cursor-pointer'>
+                            <span className='font-bold text-orange-500 hover:text-orange-400'>
+                                My Profile
+                            </span>
+                        </div>
+                    </>
                 }
             </div>
         </div>

@@ -8,10 +8,10 @@ const TrendCard = () => {
 
             {TrendData.map((trend, id) => {
                 return (
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col gap-1'>
                         <span className='hidden'>{id}</span>
                         <span className='font-bold'>#{trend.name}</span>
-                        <span className='text-gray-500'>{trend.shares}k shares</span>
+                        <span className='text-gray-400'>{trend.shares}k shares</span>
                     </div>
                 )
             })}

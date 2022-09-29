@@ -9,7 +9,7 @@ import { UilCommentDots } from '@iconscout/react-unicons'
 
 const Post = ({ data }) => {
     return (
-        <div className='flex flex-col p-4 bg-[color:var(--card-color)] rounded-md gap-4'>
+        <div className='flex flex-col p-4 mb-4 bg-[color:var(--card-color)] rounded-md gap-4'>
             <img src={data.img} alt="image" className='w-full max-h-[20rem] object-cover rounded-md' />
 
             <div className='flex justify-start items-center gap-3 text-[2.15rem]'>
